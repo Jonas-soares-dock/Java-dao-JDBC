@@ -11,7 +11,7 @@ public class Program2 {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+		Scanner teclado = new Scanner(System.in);
 		
 		DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 
@@ -38,10 +38,10 @@ public class Program2 {
 		
 		System.out.println("\n=== TEST 5: delete =======");
 		System.out.print("Enter id for delete test: ");
-		int id = sc.nextInt();
+		int id = teclado.nextInt();
 		departmentDao.deleteById(id);
 		System.out.println("Delete completed");
 
-		sc.close();
+		teclado.close();
 	}
 }
